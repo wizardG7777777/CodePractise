@@ -6,15 +6,15 @@ void vector_print(const vector<int> &v);
 
 int main() {
     std::cout << "Program begins" << std::endl;
-    vector<int> arr1 = {1,2,3,4};
-    vector<int> arr2 = {-1,1,0,-3,3};
-    vector<int> edge1 = {1,2};
-    vector answer = productExceptSelf(arr1);
-    vector_print(answer);
-    answer = productExceptSelf(arr2);
-    vector_print(answer);
-    answer = productExceptSelf(edge1);
-    vector_print(answer);
+    vector<int> gas1 = {1,2,3,4,5};
+    vector<int> cost1 = {3,4,5,1,2};
+    vector<int> gas2 = {2,3,4};
+    vector<int> cost2 = {3,4,3};
+    int output = -1;
+    output = canCompleteCircuit(gas1,cost1);
+    std::cout << "Answer for question1: " << output << std::endl;
+    output = canCompleteCircuit(gas2,cost2);
+    std::cout << "Answer for question2: " << output << std::endl;
     return 0;
     // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }
