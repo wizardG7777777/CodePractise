@@ -17,6 +17,7 @@ int maxProfitII(vector<int>& prices);
 bool canJumpI(vector<int>& nums);
 int canJumpII(vector<int>& nums);
 int hIndex(vector<int>& citations);
+int candy(vector<int>& ratings);
 vector<int> productExceptSelf(vector<int>& nums);
 int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
 #endif //UTIL_H
