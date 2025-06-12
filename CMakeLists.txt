@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.30.5)
 project(Leetcode150)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -17,6 +17,4 @@ add_executable(Leetcode150 main.cpp
         StockProblem2.cpp
         JumpGame1.cpp
         JumpGame2.cpp
-        H_index.cpp
-        CandyProblem.cpp
-)
+        H_index.cpp)
