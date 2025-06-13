@@ -22,4 +22,5 @@ int candy(vector<int>& ratings);
 vector<int> productExceptSelf(vector<int>& nums);
 int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
 int romanToInt(string s);
+string intToRoman(int num);
 #endif //UTIL_H

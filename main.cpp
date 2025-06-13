@@ -7,23 +7,21 @@ void vector_print(const vector<int> &v);
 
 int main() {
     std::cout << "Program begins" << std::endl;
-    string test1 = "III";
-    string test2 = "LVIII";
-    string test3 = "MCMXCIV";
-    string test4 = "IX";
-    string single = "X";
-    int result = 0;
-    result = romanToInt(test1);
+    int test1 = 3749;
+    int test2 = 58;
+    int test3 = 1994;
+    int test4 = 4;
+    int single = 1;
+    string result = intToRoman(test1);
     std::cout << result << std::endl;
-    result = romanToInt(test2);
+    result = intToRoman(test2);
     std::cout << result << std::endl;
-    result = romanToInt(test3);
+    result = intToRoman(test3);
     std::cout << result << std::endl;
-    result = romanToInt(test4);
+    result = intToRoman(test4);
     std::cout << result << std::endl;
-    result = romanToInt(single);
+    result = intToRoman(single);
     std::cout << result << std::endl;
-    std::cout << "Program done" << std::endl;
     return 0;
     // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }
