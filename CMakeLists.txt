@@ -18,4 +18,5 @@ add_executable(Leetcode150 main.cpp
         JumpGame1.cpp
         JumpGame2.cpp
         H_index.cpp
-        LengthOfTheLast.cpp)
+        LengthOfTheLast.cpp
+        LongestCommonPrefix.cpp)

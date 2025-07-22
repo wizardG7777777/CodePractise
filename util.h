@@ -21,4 +21,5 @@ int hIndex(vector<int>& citations);
 vector<int> productExceptSelf(vector<int>& nums);
 int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
 int lengthOfLastWord(string s);
+string longestCommonPrefix(std::vector<std::string>& strs);
 #endif //UTIL_H
