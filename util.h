@@ -5,6 +5,7 @@
 #ifndef UTIL_H
 #define UTIL_H
 #include <vector>
+#include <string>
 using namespace std;
 void merge(vector<int>& nums1, int m, vector<int>& nums2, int n);
 int removeElement(vector<int>& nums, int val);
@@ -19,4 +20,5 @@ int canJumpII(vector<int>& nums);
 int hIndex(vector<int>& citations);
 vector<int> productExceptSelf(vector<int>& nums);
 int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
+int lengthOfLastWord(string s);
 #endif //UTIL_H
