@@ -7,9 +7,9 @@
 
 std::string reverseWords(std::string s) {
         // std::string_view s_copy = s;
+        std::string result = "";
         int length = static_cast<int>(s.length());
         if (length<2) return s;
-        std::vector<std::string> word_list{};
         int right = length - 1;
         for (int i = length - 2; i >= 0; i--) {
                 //if (right==length-1 | (s_copy[i] == ' ')) continue;
@@ -19,16 +19,13 @@ std::string reverseWords(std::string s) {
                 else {
                         if ( s[i+1]!=' ') {
                                 // printf("%s ;",s.substr(i+1, right-i).c_str());
-                                word_list.push_back(s.substr(i+1, right-i));
+                                result.append(s.substr(i+1, right-i));
+                                result.append(" ");
                                 right=i;
                         }
                 }
         }
-        word_list.push_back(s.substr(0, right+1));
-        std::string result = "";
-        for (auto s:word_list) {
-                result.append(s);
-                result.append(" ");
-        }
+        if (s[0]!=' ') result.append(s.substr(0, right+1));
+        for (int i = s.length()-1;i>=0 && result[i]==' ';i--) result.pop_back();
         return result;
 }
