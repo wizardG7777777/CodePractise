@@ -7,14 +7,16 @@ void vector_print(const vector<int> &v);
 
 int main() {
     std::cout << "Program begins" << std::endl;
-    std::vector<string> str_vec1 = {"flower","flow","flight"};
-    std::vector<string> str_vec2 = {"dog","racecar","car"};
-    std::vector<string> str_vec3 = {"a"};
-    std::vector<string> str_vec4 = {"John", "Jonny", "JoJo"};
-    std::cout << "Longest Common Prefix: " << longestCommonPrefix(str_vec1) << std::endl;
-    std::cout << "Longest Common Prefix: " << longestCommonPrefix(str_vec2) << std::endl;
-    std::cout << "Longest Common Prefix: " << longestCommonPrefix(str_vec3) << std::endl;
-    std::cout << "Longest Common Prefix: " << longestCommonPrefix(str_vec4) << std::endl;
+    string s01 = "the sky is blue";
+    string s02 = "  hello world  ";
+    string s03 = "a good   example";
+    string single01 = "a ";
+    string single02 = "a";
+    std::cout << reverseWords(s01) << std::endl;
+    std::cout << reverseWords(s02) << std::endl;
+    std::cout << reverseWords(s03) << std::endl;
+    std::cout << reverseWords(single01) << std::endl;
+    std::cout << reverseWords(single02) << std::endl;
     std::cout << "Program ends" << std::endl;
     return 0;
     // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
